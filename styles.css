@@ -6,8 +6,45 @@ html, body {
 }
 
 .sidebar {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     
+    padding: 0 1rem 0 1rem;
+
     background-color: green;
+    color: rgb(238, 238, 238);
+}
+
+.pfp {
+    width: 55px;
+    height: 55px;
+
+    background-color: lightgray;
+    border-radius: 50%;
+}
+
+.name-id > * {
+    margin: 0;
+}
+
+.name-id {
+    margin: 1rem 0 2rem 0;
+}
+
+#id {
+    font-size: 0.8rem;
+}
+
+.sidebar > button {
+    appearance: none;
+    
+    margin: 0 0 0.4rem 0;
+
+    border: 0;
+    background-color: transparent;
+    color:rgb(238, 238, 238);
+    
+    text-align: left;
+    font-size: 1.2rem;
 }
