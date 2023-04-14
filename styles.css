@@ -161,6 +161,10 @@ body {
     font-size: 1.6rem;
 }
 
+.academic-guide, .app-guide {
+    align-self: center;
+}
+
 /* Cards */
 
 .grid {
