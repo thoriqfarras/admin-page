@@ -15,7 +15,7 @@ body {
     display: grid;
     grid-template-columns: minmax(16rem, 400px) 2fr 0.8fr;
     grid-template-rows: 6rem 8rem 1fr;
-    row-gap: 2rem; 
+    row-gap: 1rem; 
 }
 
 /* Sidebar */
@@ -195,13 +195,26 @@ body {
     grid-row: 2 / span 2;
 
     display: grid;
-    grid-template: repeat(2, minmax(320px, 1fr)) / minmax(350px, 1fr);
+    grid-template: repeat(auto-fit, minmax(300px, 1fr)) / minmax(300px, 1fr);
     gap: 4rem;
 
-    padding: 0.8rem 3rem 3rem 0.8rem;
+    padding: 2rem 3rem 3rem 0.8rem;
 }
 
 .column-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-card > h2 {
+    margin: 0;
+    padding: 0 0 0 1rem;
+}
+
+.column-card > .card {
+    flex: 1;
+
     background-color: rgb(243, 243, 243);
-    border-radius: 50px;
+    border: none;
+    border-radius: 25px;
 }
