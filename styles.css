@@ -241,6 +241,12 @@ body {
     grid-template-columns: repeat(4, 1fr);
 }
 
+#academics .content > div {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
 /* Column cards */
 
 .right-column {
