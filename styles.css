@@ -192,25 +192,26 @@ body {
     padding: 0 0 0 1.2rem;
 }
 
-.card.timetable {
+.card#timetable {
     grid-column: 1 / span 2;
 }
 
-.card.academics {
+.card#academics {
     grid-column: span 2 / -1;
 }
 
 /* Card's content */
 
-#timetable {
-    display: flex;
-    gap: 10px;
-
+.card .content {
     padding: 0 0 0 2rem;
-
 }
 
-#timetable ul, #timetable h4 {
+#timetable .content {
+    display: flex;
+    gap: 10px;
+}
+
+#timetable ul, #elena ul {
     margin: 0;
     padding: 0;
 }
@@ -220,7 +221,7 @@ body {
     margin: 0 0 0.8rem 0;
 }
 
-#timetable li {
+#timetable li, #elena li {
     list-style: none;
 }
 
@@ -234,6 +235,8 @@ body {
 
     padding: 1rem;
 }
+
+
 
 /* Column cards */
 

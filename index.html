@@ -22,7 +22,7 @@
     <button type="button" class="monitoring">Course Monitoring</button>
     <button type="button" class="plp">PLP Portal</button>
   </nav>
-
+  
   <div class="top">
     <div class="search">
       <label for="search"></label>
@@ -31,7 +31,7 @@
     <div class="notification"></div>
     <div class="apps"></div>
   </div>
-
+  
   <div class="overview">      
     <div class="bubble semester">
       <div class="circ-logo">2nd</div>
@@ -54,11 +54,11 @@
       <div class="circ-logo"></div>
     </div>
   </div>
-
+  
   <div class="grid">
-    <div class="card timetable">
+    <div id="timetable" class="card">
       <h1>Timetable</h1>
-      <div id="timetable">
+      <div class="content">
         <div id="mon" class="day">
           <h4>MON</h4>
           <ul>
@@ -95,17 +95,26 @@
         </div>
       </div>
     </div>
-    <div class="card elena">
+    <div class="card">
       <h1>Elena</h1>
+      <div id="elena" class="content">
+        <h4>Latest Events:</h4>
+        <ul>
+          <li>STA: Literature Review</li>
+          <li>LOA: Practice Questions</li>
+          <li>DSA: Binary Search Exercises</li>
+          <li>ENG: Blogpost</li>
+        </ul>
+      </div>
     </div>
-    <div class="card courses">
+    <div class="card">
       <h1>My Courses</h1>
     </div>
-    <div class="card academics">
+    <div id="academics"class="card">
       <h1>Academics</h1>
     </div>
   </div>
-
+  
   <div class="right-column">
     <div class="column-card">
       <h2>Announcement</h2>
