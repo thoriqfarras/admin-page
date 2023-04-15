@@ -216,7 +216,7 @@ body {
     padding: 0;
 }
 
-#timetable h4 {
+#timetable h4, #academics h4 {
     text-align: center;
     margin: 0 0 0.8rem 0;
 }
