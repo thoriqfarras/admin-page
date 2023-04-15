@@ -206,12 +206,12 @@ body {
     padding: 0 0 0 2rem;
 }
 
-#timetable .content {
+#timetable .content, #academics .content {
     display: flex;
     gap: 10px;
 }
 
-#timetable ul, #elena ul, #courses ul {
+#timetable ul, #elena ul, #courses ul, #academics ul {
     margin: 0;
     padding: 0;
 }
@@ -221,7 +221,7 @@ body {
     margin: 0 0 0.8rem 0;
 }
 
-#timetable li, #elena li, #courses li {
+#timetable li, #elena li, #courses li, #academics li {
     list-style: none;
 }
 
@@ -236,7 +236,10 @@ body {
     padding: 1rem;
 }
 
-
+#academics ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
 
 /* Column cards */
 
