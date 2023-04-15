@@ -192,6 +192,14 @@ body {
     padding: 0 0 0 1.2rem;
 }
 
+.card.timetable {
+    grid-column: 1 / span 2;
+}
+
+.card.academics {
+    grid-column: span 2 / -1;
+}
+
 /* Column cards */
 
 .right-column {
