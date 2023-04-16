@@ -124,16 +124,26 @@ body {
     box-shadow: 0 1px 3px 0px gray;
 }
 
-.notification, .apps {
-    width: 45px;
-    height: 45px;
+.notification svg, .apps svg {
+    width: auto;
+    height: 35px;
 
-    background-color: lightgray;
-    border-radius: 50%;
+    fill: rgb(194, 194, 194);
 }
 
 .notification {
-    margin-left: auto;
+    margin: 0 1rem 0 auto;
+}
+
+#new-notification-indicator {
+    position: absolute;
+    right: 78px;
+    z-index: 1;
+
+    width: auto;
+    height: 14px;
+
+    fill: red;
 }
 
 .search {
@@ -155,6 +165,9 @@ body {
     border: 0;
     border-radius: 45px;
     background-color: lightgray;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
 }
 
 /* Overview bar */
