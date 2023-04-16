@@ -277,3 +277,14 @@ body {
     border: none;
     border-radius: 25px;
 }
+
+.column-card .tab {
+    padding: 1rem 0.8rem 0.6rem 2rem;
+
+    border-bottom: 1px solid gray;
+}
+
+.column-card .tab > h4, .column-card .tab > p {
+    margin: 0;
+    padding: 0;
+}
