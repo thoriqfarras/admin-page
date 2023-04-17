@@ -274,7 +274,6 @@ main {
 
     background-color: rgb(243, 243, 243);
     border-radius: 50px;
-    border-bottom: 7px solid #65a30d;
     border-right: 7px solid #65a30d;
 }
 
@@ -343,6 +342,20 @@ main {
     border-radius: 8px;
 
     padding: 1rem 0.4rem;
+}
+
+#elena h4 {
+    margin: 0 0 0.8rem 0;
+}
+
+#elena {
+    background-color: #1e3a8a;
+    color: rgb(243, 243, 243);
+    border-right-color: #fb923c;
+}
+
+#elena:hover > .more {
+    color: rgb(238, 238, 238);
 }
 
 #academics ul {
