@@ -312,15 +312,20 @@ main {
     list-style: none;
 }
 
-#timetable li::before {
+/* #timetable li::before {
     content: '• ';
+} */
+
+#timetable ul {
+    display: grid;
+    gap: 6px;
 }
 
 .day {
     border: 1px solid black;
     border-radius: 8px;
 
-    padding: 1rem;
+    padding: 1rem 0.4rem;
 }
 
 #academics ul {
@@ -332,6 +337,28 @@ main {
     border: 1px solid black;
     border-radius: 8px;
     padding: 1rem;
+}
+
+.class-code {
+    padding: 2px;
+
+    background-color: black;
+    color: white;
+
+    border-radius: 6px;
+    text-align: center;
+}
+
+#COA303, #LOG307, #ENG306 {
+    background-color: #ea580c;
+}
+
+#STA305, #DSA308, #ELA309 {
+    background-color: #991b1b;
+}
+
+#PKN007, #PPN008, #CON005 {
+    background-color: #0284c7;
 }
 
 /* Column cards */
