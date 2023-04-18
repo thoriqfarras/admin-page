@@ -272,6 +272,8 @@ main {
     display: flex;
     flex-direction: column;
 
+    padding: 2rem;
+
     background-color: rgb(243, 243, 243);
     border-radius: 50px;
     border-right: 7px solid #65a30d;
@@ -281,7 +283,6 @@ main {
     box-sizing: border-box;
     margin: 0;
     margin-top: auto;
-    padding: 0 0 1rem 2rem;
     color: transparent;
     font-style: italic;
     transition: all 0.3s ease-in-out;
@@ -292,7 +293,7 @@ main {
 }
 
 .card > h1 {
-    padding: 0 0 0 1.2rem;
+    margin: 0 0 1rem 0;
 }
 
 .card#timetable {
@@ -305,9 +306,9 @@ main {
 
 /* Card's content */
 
-.card .content {
+/* .card .content {
     padding: 0 0 0 2rem;
-}
+} */
 
 #timetable .content, #academics .content {
     display: flex;
@@ -380,6 +381,17 @@ main {
     color: rgb(238, 238, 238);
 }
 
+#courses .content ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+#courses .content .class-code {
+    width: 4.4rem;
+    margin-right: 6px;
+}
+
 #academics ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -396,12 +408,12 @@ main {
     gap: 4px;
     padding: 4px;
     align-items: center;
+    justify-content: center;
 
     background-color: black;
     color: rgb(243, 243, 243);
 
     border-radius: 6px;
-    text-align: center;
 }
 
 #COA303, #LOG307, #ENG306 {
