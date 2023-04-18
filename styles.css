@@ -332,11 +332,11 @@ main {
     display: inline;
 }
 
-#timetable p {
-    margin: 1rem 0;
+#timetable .content p, #elena .content p {
+    margin: 0.8rem 0;
 }
 
-#timetable .content p::before {
+#timetable .content p::before, #elena .content p::before {
     content: '• ';
 }
 
@@ -369,6 +369,13 @@ main {
     border-right-color: #fb923c;
 }
 
+#elena svg {
+    display: inline;
+    width: auto;
+    height: 1rem;
+    fill: rgb(238, 238, 238)
+}
+
 #elena:hover > .more {
     color: rgb(238, 238, 238);
 }
@@ -385,7 +392,10 @@ main {
 }
 
 .class-code {
-    padding: 2px;
+    display: inline-flex;
+    gap: 4px;
+    padding: 4px;
+    align-items: center;
 
     background-color: black;
     color: rgb(243, 243, 243);
