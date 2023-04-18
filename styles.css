@@ -398,7 +398,7 @@ main {
 }
 
 #academics .content > div {
-    border: 1px solid black;
+    border-right: 4px solid black;
     border-radius: 8px;
     padding: 1rem;
 }
@@ -441,6 +441,10 @@ main {
     padding: 2rem 3rem 3rem 0.8rem;
 }
 
+.column-card .card {
+    padding: 0;
+}
+
 .column-card {
     display: flex;
     flex-direction: column;
@@ -468,4 +472,22 @@ main {
 .column-card .tab > h4, .column-card .tab > p {
     margin: 0;
     padding: 0;
+}
+
+/* Footer */
+footer {
+    grid-column: 1 / -1;
+    justify-self: center;
+
+    display: flex;
+    gap: 6px;
+    align-items: center;
+
+    color: rgb(87, 87, 87);
+}
+
+footer svg {
+    display: inline;
+    width: auto;
+    height: 1.5rem;
 }
