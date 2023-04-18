@@ -328,9 +328,17 @@ main {
     list-style: none;
 }
 
-/* #timetable li::before {
+#timetable h4 {
+    display: inline;
+}
+
+#timetable p {
+    margin: 1rem 0;
+}
+
+#timetable .content p::before {
     content: '• ';
-} */
+}
 
 #timetable ul {
     display: grid;
@@ -340,8 +348,15 @@ main {
 .day {
     background-color: #fde047;
     border-radius: 8px;
+    border-right: 5px solid black;
+    /* border-bottom: 5px solid black; */
 
-    padding: 1rem 0.4rem;
+    padding: 0.4rem 2rem 0.4rem 1.6rem;
+}
+
+.day.today {
+    background-color: #dc2626;
+    color: rgb(238, 238, 238);
 }
 
 #elena h4 {
