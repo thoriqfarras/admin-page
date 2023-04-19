@@ -27,7 +27,7 @@ body {
     display: flex;
     flex-direction: column;
     
-    padding: 0 1rem;
+    padding: 0 1rem 1rem 1rem;
     
     background-color: #4d7c0f;
     color: rgb(238, 238, 238);
