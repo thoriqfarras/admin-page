@@ -279,12 +279,21 @@ main {
 .card {
     display: flex;
     flex-direction: column;
+    position: relative;
 
     padding: 2rem;
 
     background-color: rgb(243, 243, 243);
     border-radius: 50px;
     border-right: 7px solid #65a30d;
+
+    transition: box-shadow 0.3s ease;
+    animation: float-back 0.3s ease both;
+}
+
+.card:hover {
+    box-shadow: 3px 3px 3px 2px rgb(44, 44, 44);
+    animation: float 0.3s ease both;
 }
 
 .card .more {
@@ -451,6 +460,13 @@ main {
 
 .column-card .card {
     padding: 0;
+    box-shadow: none;
+    transition: none;
+    animation: none;
+}
+
+.column-card .card:hover {
+    animation: none;
 }
 
 .column-card {
@@ -506,6 +522,8 @@ footer svg:hover {
     scale: 1.5;
 }
 
+/* Animations */
+
 @keyframes spin {
     0% {
         rotate: 0;
@@ -517,5 +535,29 @@ footer svg:hover {
 
     100% {
         rotate: 360deg;
+    }
+}
+
+@keyframes float {
+    0% {
+        bottom: 0;
+        right: 0;
+    }
+
+    100% {
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+@keyframes float-back {
+    0% {
+        bottom: 10px;
+        right: 10px;
+    }
+    
+    100% {
+        bottom: 0;
+        right: 0;
     }
 }
