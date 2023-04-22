@@ -141,6 +141,11 @@ body {
     fill: rgb(194, 194, 194);
 }
 
+.notification svg:hover, .apps svg:hover {
+    filter: drop-shadow(0 0 2px rgb(194, 194, 194));
+    cursor: pointer;
+}
+
 .notification {
     margin: 0 1rem 0 auto;
 }
