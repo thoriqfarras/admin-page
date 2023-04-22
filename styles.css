@@ -102,6 +102,7 @@ body {
 .sidebar > button:hover {
     background-color: #3f6212;
     padding-left: 1rem;
+    cursor: pointer;
 }
 
 .sidebar > button > svg {
@@ -296,9 +297,10 @@ main {
     animation: float-back 0.3s ease both;
 }
 
-.card:hover {
+.grid .card:hover {
     box-shadow: 3px 3px 3px 2px rgb(44, 44, 44);
     animation: float 0.3s ease both;
+    cursor: pointer;
 }
 
 .card .more {
